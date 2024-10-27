@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Bookings</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <h1>All Bookings</h1>
+    <ul>
+        <% bookings.forEach(booking => { %>
+            <li>
+                <strong>Lawn:</strong> <%= booking.lawn %> <br>
+                <strong>Date:</strong> <%= booking.date %> <br>
+                <strong>Name:</strong> <%= booking.name %> <br>
+                <strong>Phone:</strong> <%= booking.phone %> <br>
+                <strong>Email:</strong> <%= booking.email %> <br>
+                <strong>Address:</strong> <%= booking.address %> <br>
+                <strong>Total Amount:</strong> <%= booking.totalAmount %> <br>
+                <strong>Discounted Amount:</strong> <%= booking.discountedAmount %> <br>
+                <strong>Advance Paid:</strong> <%= booking.advancePaid %> <br>
+                <strong>Due Payment:</strong> <%= booking.duePayment %><br>
+                <strong>Additional Services:</strong> <%= booking.additionalServices %> <br>
+
+            </li>
+            
+        <% }) %>
+    </ul>
+</body>
+</html>
